@@ -5,14 +5,12 @@ for (var i = 0; i< arr.length; i++)
         arr[i].addEventListener("click", handleClick);
     }
 
-document.addEventListener("keypress", handleClick);
-
-
 function handleClick()
 {
-    
     var audio;
-    switch (event.key || this.innerHTML)
+    console.log(this);
+    
+    switch (this.innerHTML)
             {
             
     case("w"):
@@ -59,7 +57,5 @@ function handleClick()
         break;
     }
         default:break;
-        
-
     }
 }
